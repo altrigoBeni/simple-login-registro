@@ -1,2 +1,4 @@
 com\cice\login\datasource\Datasource.class
 com\cice\login\Main.class
+com\cice\login\services\servicios.class
+com\cice\login\dao\UserDao.class

@@ -1,20 +1,18 @@
 package com.cice.login;
 
+import java.sql.SQLException;
+
 import org.apache.log4j.BasicConfigurator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import com.cice.login.services.servicios;
 
 public class Main {
 
-	private static final Logger log = LoggerFactory.getLogger(Main.class);
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		BasicConfigurator.configure();
-		log.debug("Estoy en modo debug");
-		log.info("Estoy en modo info");
-		log.warn("Estoy en modo warn");
-		log.error("Estoy en modo error");
-
+		servicios.userLogin();
+		
 	}
 
 }
